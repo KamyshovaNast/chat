@@ -1,18 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <Container></Container>
+      <ChatMessage></ChatMessage>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Container from './components/Container.vue'
+import ChatMessage from './components/ChatMessage.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+        Container, ChatMessage
+    },
+    data() {
+        return {
+            username: 'Ivan',
+            datatime: '21.12.2019 05:00:50'
+        }
+    }
 }
 </script>
 
