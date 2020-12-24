@@ -1,34 +1,29 @@
 <template>
-  <div id="app">
-      <Container></Container>
-      <ChatWindow></ChatWindow>
-  </div>
+    <div id="app">
+        <Container>
+            <ChatWindow>
+                <ChatMessage username="Ivan" time="21.12.2019 05:00:50">Hello, World!!!</ChatMessage>
+            </ChatWindow>
+        </Container>
+      </div>
 </template>
 
 <script>
 import Container from './components/Container.vue'
+import ChatMessage from './components/ChatMessage.vue'
 import ChatWindow from './components/ChatWindow.vue'
 
 export default {
     name: 'App',
     components: {
-        Container, ChatWindow
-    },
-    data() {
-        return {
-            username: 'Ivan',
-            datatime: '21.12.2019 05:00:50'
-        }
+        Container, ChatWindow, ChatMessage
     }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+#body {
+  margin: 0;
+  background-color: #f9f9fa;
 }
 </style>
