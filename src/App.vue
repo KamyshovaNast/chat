@@ -1,18 +1,18 @@
 <template>
   <div id="app">
       <Container></Container>
-      <ChatMessage></ChatMessage>
+      <ChatWindow></ChatWindow>
   </div>
 </template>
 
 <script>
 import Container from './components/Container.vue'
-import ChatMessage from './components/ChatMessage.vue'
+import ChatWindow from './components/ChatWindow.vue'
 
 export default {
     name: 'App',
     components: {
-        Container, ChatMessage
+        Container, ChatWindow
     },
     data() {
         return {
@@ -30,6 +30,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
